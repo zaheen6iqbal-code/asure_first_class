@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PixelPortfolio Pro | Creative Showcase</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+    <custom-navbar></custom-navbar>
+
+    <main class="container mx-auto px-4 py-12">
+        <!-- Hero Section -->
+        <section class="flex flex-col md:flex-row items-center justify-between gap-12 mb-24">
+            <div class="md:w-1/2">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6">Hello, I'm <span class="text-indigo-600">Alex</span></h1>
+                <p class="text-xl text-gray-600 mb-8">Digital designer & front-end developer creating beautiful, functional experiences.</p>
+                <div class="flex gap-4">
+                    <a href="#work" class="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-lg transition-all">View Work</a>
+                    <a href="#contact" class="border-2 border-indigo-600 text-indigo-600 hover:bg-indigo-50 px-6 py-3 rounded-lg transition-all">Contact Me</a>
+                </div>
+            </div>
+            <div class="md:w-1/2">
+                <img src="http://static.photos/technology/640x360/42" alt="Designer at work" class="rounded-xl shadow-xl">
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="mb-24">
+            <h2 class="text-3xl font-bold mb-12 text-center">My Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-all">
+                    <i data-feather="code" class="w-12 h-12 text-indigo-600 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">Front-End Development</h3>
+                    <p class="text-gray-600">Building responsive, accessible websites with modern frameworks and best practices.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-all">
+                    <i data-feather="layout" class="w-12 h-12 text-indigo-600 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">UI/UX Design</h3>
+                    <p class="text-gray-600">Creating intuitive interfaces with user-centered design principles.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-all">
+                    <i data-feather="smartphone" class="w-12 h-12 text-indigo-600 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">Mobile Design</h3>
+                    <p class="text-gray-600">Designing seamless mobile experiences that users love.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="work" class="mb-24">
+            <h2 class="text-3xl font-bold mb-12 text-center">Featured Work</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="group relative overflow-hidden rounded-xl shadow-md hover:shadow-lg transition-all">
+                    <img src="http://static.photos/technology/640x360/1" alt="Project 1" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-6 opacity-0 group-hover:opacity-100 transition-opacity">
+                        <div>
+                            <h3 class="text-white text-xl font-bold mb-2">E-commerce Platform</h3>
+                            <p class="text-gray-200 mb-4">Modern shopping experience with intuitive navigation</p>
+                            <a href="#" class="text-indigo-300 hover:text-white font-medium">View Case Study →</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-xl shadow-md hover:shadow-lg transition-all">
+                    <img src="http://static.photos/technology/640x360/2" alt="Project 2" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-6 opacity-0 group-hover:opacity-100 transition-opacity">
+                        <div>
+                            <h3 class="text-white text-xl font-bold mb-2">Health App</h3>
+                            <p class="text-gray-200 mb-4">Wellness tracking with beautiful data visualization</p>
+                            <a href="#" class="text-indigo-300 hover:text-white font-medium">View Case Study →</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-xl shadow-md hover:shadow-lg transition-all">
+                    <img src="http://static.photos/technology/640x360/3" alt="Project 3" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-6 opacity-0 group-hover:opacity-100 transition-opacity">
+                        <div>
+                            <h3 class="text-white text-xl font-bold mb-2">Travel Website</h3>
+                            <p class="text-gray-200 mb-4">Immersive destination exploration experience</p>
+                            <a href="#" class="text-indigo-300 hover:text-white font-medium">View Case Study →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="bg-indigo-50 rounded-2xl p-12">
+            <h2 class="text-3xl font-bold mb-6 text-center">Let's Work Together</h2>
+            <p class="text-gray-600 text-center max-w-2xl mx-auto mb-12">Have a project in mind or want to discuss potential opportunities? I'd love to hear from you!</p>
+            
+            <form class="max-w-2xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                    <div>
+                        <label for="name" class="block text-gray-700 mb-2">Name</label>
+                        <input type="text" id="name" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 transition-all">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-gray-700 mb-2">Email</label>
+                        <input type="email" id="email" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 transition-all">
+                    </div>
+                </div>
+                <div class="mb-6">
+                    <label for="subject" class="block text-gray-700 mb-2">Subject</label>
+                    <input type="text" id="subject" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 transition-all">
+                </div>
+                <div class="mb-6">
+                    <label for="message" class="block text-gray-700 mb-2">Message</label>
+                    <textarea id="message" rows="5" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 transition-all"></textarea>
+                </div>
+                <button type="submit" class="bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-4 rounded-lg transition-all w-full md:w-auto">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <custom-footer></custom-footer>
+
+    <script>
+        feather.replace();
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
